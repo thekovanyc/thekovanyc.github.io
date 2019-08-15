@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.location-container {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.location-section {
+  width: 50%;
+  height: 100%;
+}
+
+table {
+  margin:  auto;
+}
+
+table td:last-child {
+  padding-left: 10px;
+}
