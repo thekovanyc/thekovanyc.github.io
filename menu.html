@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" href="style/style.css">
+      <link rel="stylesheet" href="style/menu.css">
+  </head>
+  <body>
+    <div class="navigation">
+      <ul>
+        <li><a href="/"><img src="logo.png"></a></li>
+        <div class="align-right">
+          <li><a href="/menu.html">Menu</a></li>
+          <li><a href="/location.html">Location & Hours</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </div>
+      </ul>
+    </div>
+
+    <div class="title">Menu <hr/></div>
+
+    <div class="menu-container">
+      <img src="photos/eggs.JPG"/>
+      <div class="menu-div" id="brunch-food"></div>
+    </div>
+    
+    <div class="menu-container">
+     
+      <div class="menu-div" id="pancake-toast"></div>
+       <img src="photos/pancake.JPG"/>
+    </div>
+    
+    <div class="menu-container">
+      <img src="photos/bec.JPG"/>
+      <div class="menu-div" id="savory-food"></div>
+    </div>
+    
+    <div class="menu-container">
+      <div class="menu-div" id="coffee"></div>
+      <img src="photos/latte.JPG"/>
+    </div>
+    
+    <div class="menu-container">
+      <img src="photos/lemonade.JPG"/>
+      <div class="menu-div" id="tea"></div>
+    </div>
+    
+    <div class="menu-container">
+      <div class="menu-div" id="pastries"></div>
+      <img src="photos/pastries.JPG"/>
+    </div>
+
+    <script src="menu.js"></script>
+    <script>
+      function parseExtras (extras, dom) {
+        if (!extras) return '';
+        extras.forEach(extra => {
+          dom.innerHTML += 
+            `<div class="extras">- ${extra.name} +${extra.price} </div>`
+        })
+      }
+      
+      function parseDesc (desc, dom) {
+        if (!desc) return '';
+        dom.innerHTML += 
+          `<div class="desc"> ${desc} </div>`;
+      }
+      
+      function parseFlavors (flavors, dom) {
+        if (!flavors) return '';
+        flavors[0].split(", ").forEach(flavor => {
+          console.log(flavor);
+          dom.innerHTML += 
+            `<div class="desc"> ${flavor} </div>`;
+        });
+      }
+      
+      function parseMenuItems (items, dom) {
+        items.forEach(item => {
+          var price = item.price? `$${item.price}` : '';
+          dom.innerHTML += 
+            `<div class="food">${item.name} ${price}</div> ` 
+          parseExtras(item.extras, dom);
+          parseDesc(item.desc, dom);
+          parseFlavors(item.flavors, dom);
+        })
+      }
+      
+      var brunchFoodDom = document.getElementById("brunch-food");
+      parseMenuItems(data.egg_dishes, brunchFoodDom);
+      brunchFoodDom.innerHTML += '<br/><div class="desc">*All egg dishes served with home fries*</div><p/>';
+      
+      var pancakeToastDom = document.getElementById("pancake-toast");
+      parseMenuItems(data.pancake_toast_salad, pancakeToastDom);
+      
+      var savoryFoodDom = document.getElementById("savory-food");
+      parseMenuItems(data.savory, savoryFoodDom);
+      
+      var coffeeDom = document.getElementById("coffee");
+      parseMenuItems(data.coffee, coffeeDom);
+
+      var teaDom = document.getElementById("tea");
+      parseMenuItems(data.hot_tea, teaDom);
+      parseMenuItems(data.other_drinks, teaDom);
+      
+      teaDom.innerHTML += '<p/><br/><b>Seasonal</b>';
+      parseMenuItems(data.seasonal_drinks, teaDom);
+      
+      var pastriesDom = document.getElementById("pastries");
+      parseMenuItems(data.pastries, pastriesDom);
+    </script>
+  </body>
+</html>
