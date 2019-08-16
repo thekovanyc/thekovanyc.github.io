@@ -27,13 +27,17 @@ table td:last-child {
 
 @media only screen and (max-width: 600px) {
   .location-container {
-    width: 100%;
+    width: 80%;
     display: block;
     margin-bottom: 20px;
   }
   
   .location-section:last-child {
     padding-top: 20px;
+  }
+  
+  .location-div, .location-container img {
+    width: 100%;
   }
 }
 
