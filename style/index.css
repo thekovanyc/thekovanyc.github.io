@@ -26,6 +26,7 @@ body {
   background-color: rgb(173, 120, 86);
   text-decoration: none;
   padding: 8px;
+  text-transform: uppercase;
 }
 
 .index-navigation li a:hover{
