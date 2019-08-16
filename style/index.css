@@ -7,17 +7,6 @@ body {
   color: white;
 }
 
-  
-@media (orientation: portrait) {
-  body {
-    background: url(../photos/interior_portrait.JPG) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-}
-
 .index-container {
   margin-top: 15%;
 }
@@ -27,6 +16,7 @@ body {
   display: flex;
   justify-content: center;
   list-style: none;
+  opacity: 0.8;
 }
 
 .index-navigation li a{
@@ -41,4 +31,18 @@ body {
 .index-navigation li a:hover{
   background-color: white;
   color: rgb(173, 120, 86);
+}
+
+@media (orientation: portrait) {
+  body {
+    background: url(../photos/interior_portrait.JPG) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  .index-container {
+    margin-top: 35%;
+  }
 }
