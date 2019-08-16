@@ -22,7 +22,6 @@ hr {
   display: flex;
   justify-content: flex-start;
   align-content: center;
-  opacity: 0.8;
 }
 
 .align-right {
@@ -38,7 +37,7 @@ hr {
 
 .navigation {
   width: 100%;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .navigation a {
@@ -47,14 +46,17 @@ hr {
   font-size: 16px;
   text-decoration: none;
   color: black;
-  opacity: 0.9;
+  opacity: 0.8;
   text-transform: uppercase;
+  padding: 5px;
+  transition: 300ms ease-in-out;
 }
 
 .navigation a:hover {
   transition: 100ms ease-out;
   border-bottom: 1px solid #D29F4B;
-  color: #454545;
+  color: white;
+  background-color: #D29F4B;
 }
 
 h1, h3, h4 {
@@ -83,7 +85,6 @@ h4 {
     display: block;
     padding: 0px;
   }
-  
   .navigation li {
     border-radius: 0px;
     margin-top: 5px;
