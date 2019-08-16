@@ -70,7 +70,7 @@ var data = {
     {
       "name": "Bacon, Egg & Cheese",
       "price": 6.00,
-      "desc": "With runny yolk & argula"
+      "desc": "With runny yolk & arugula"
     }, 
     {
       "name": "Grilled Cheese",
@@ -82,7 +82,7 @@ var data = {
       ]
     }, 
     {
-      "name": "Siracha Jam Grilled Cheese",
+      "name": "Sriracha Jam Grilled Cheese",
       "price": 5.75
     }, 
     {
