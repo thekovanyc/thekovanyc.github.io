@@ -16,16 +16,15 @@ body {
   display: flex;
   justify-content: center;
   list-style: none;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .index-navigation li a{
-  margin: 0 6px;
+  margin: 0 12px;
   color: white;
   background-color: rgb(173, 120, 86);
-  border:1px solid rgb(173, 120, 86);
   text-decoration: none;
-  padding: 5px;
+  padding: 8px;
 }
 
 .index-navigation li a:hover{
