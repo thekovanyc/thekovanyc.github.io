@@ -25,6 +25,11 @@ var data = {
         ]
       }, 
       {
+        "name": "The KOVA Breakfast",
+        "price": 9.75,
+        "desc": "2 eggs, canadian bacon, salad, grilled tomatoes, house dressing, and toast"
+      },
+      {
         "name": "Egg Benedict",
         "price": 10.75,
         "desc": "With canadian bacon"
@@ -56,6 +61,10 @@ var data = {
       "name": "Fruit Salad",
       "price": 6.00
     }, 
+    {
+      "name": "Green Salad",
+      "price": 6.00
+    },
     {
       "name": "Sides", 
       "extras": [
@@ -96,6 +105,11 @@ var data = {
       "desc": "With wasabi aioli, lettuce, tomato & hand cut fries"
     }, 
     {
+      "name": "Pull Chicken Sandwich",
+      "price":  11.75,
+      "desc": "With mushrooms, greens with house dressing, served on a bun with a side of coleslaw"
+    },
+    {
       "name": "Sweet Potato Fries", 
       "price": 5.75,
       "desc": "With sriracha mayo"
@@ -121,6 +135,9 @@ var data = {
     { "name": "Mocha", "price": 4.50 },
     { "name": "Chai Latte", "price": 4.75 },
     { "name": "Matcha Latte", "price": 4.75 },
+    { "name": "Pumpkin Spice Latte", "price": 4.75 },
+    { "name": "Lavender Latte", "price": 5.00 },
+    { "name": "The Kova Latte", "price": 5.25 },
     { 
       "name": "Hot Chocolate", 
       "price": 3.25,
