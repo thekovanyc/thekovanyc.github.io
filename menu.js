@@ -137,7 +137,9 @@ var data = {
     { "name": "Matcha Latte", "price": 4.75 },
     { "name": "Pumpkin Spice Latte", "price": 4.75 },
     { "name": "Lavender Latte", "price": 5.00 },
-    { "name": "The Kova Latte", "price": 5.25 },
+    { "name": "The Kova Latte", "price": 5.25 }
+  ],
+  hot_tea: [
     { 
       "name": "Hot Chocolate", 
       "price": 3.25,
@@ -147,8 +149,6 @@ var data = {
         { "name": "Extra Shot", "price": 1.50 },
       ]
     }, 
-  ],
-  hot_tea: [
     { 
       "name": "Tea", price: "2.50 (Hot) $3 (Cold)", 
       "flavors": ["Earl Gray, English Breakfast, Green, Peppermint, Chamomile"]
