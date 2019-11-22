@@ -97,7 +97,7 @@ var data = {
     {
       "name": "Cheeseburger", 
       "price": 11.75,
-      "desc": "Homemade burger with caramelized onions on Brioche bun & hand cut fries"
+      "desc": "With caramelized onions on brioche bun & hand cut fries"
     }, 
     {
       "name": "Fried Chicken Sandwich",
