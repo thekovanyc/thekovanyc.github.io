@@ -135,7 +135,6 @@ var data = {
     { "name": "Mocha", "price": 4.50 },
     { "name": "Chai Latte", "price": 4.75 },
     { "name": "Matcha Latte", "price": 4.75 },
-    { "name": "Pumpkin Spice Latte", "price": 4.75 },
     { "name": "Lavender Latte", "price": 5.00 },
     { "name": "The Kova Latte", "price": 5.25 }
   ],
@@ -160,7 +159,7 @@ var data = {
     {"name": "Bottled Sparkling Water", "price": "2.50"}
   ],
   seasonal_drinks: [
-    {"name": "Homemade Hibiscus Lemonade", "price": 3.75},
+    {"name": "Pumpkin Spice Latte", "price": 4.75 },
     {"name": "Fresh Young Coconut Juice", "price": 5.00}
   ], 
   pastries: [
