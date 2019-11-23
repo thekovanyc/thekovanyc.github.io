@@ -19,14 +19,13 @@
 margin-top: 8px;
 }
 
-.extras {
-  font-size: 12px;
-}
-
-.desc {
-  font-size: 12px;
-}
-
+  .menu-container {
+    font-size: 1rem;
+  }
+  
+  .extras, .desc {
+    font-size: 0.8rem;
+  }
 .mobile-only {
   display: none;
 }
@@ -43,20 +42,14 @@ margin-top: 8px;
 }
 
 @media screen and (max-width: 680px) {
-  .menu-container {
-    font-size: 14px;
-  }
-  
-  .extras, .desc {
-    font-size: 1.2rem;
-  }
-  
   .menu-container img, .menu-div  {
     width: 100%;
   }
   
   .menu-div {
-    margin: 8px;
+    padding: 10px;
+    width:calc(100% - 20px);
+    
   }
   
   .menu-container {
