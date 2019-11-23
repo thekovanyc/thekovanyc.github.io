@@ -7,7 +7,7 @@
   margin: auto;
   width: 100%;
   display: flex;
-  height: 400px;
+  height: 470px;
 }
 
 .menu-div {
@@ -27,14 +27,8 @@ margin-top: 8px;
   font-size: 12px;
 }
 
-@media screen and (max-width: 680px) {
-  .menu-container {
-    font-size: 14px;
-  }
-  
-  .extras, .desc {
-    font-size: 11px;
-  }
+.mobile-only {
+  display: none;
 }
 
 @media screen and (min-width: 2000px) {
@@ -45,5 +39,32 @@ margin-top: 8px;
   
   .extras, .desc {
     font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .menu-container {
+    font-size: 14px;
+  }
+  
+  .menu-container img, .menu-div  {
+    width: 100%;
+  }
+  
+  .menu-div {
+    margin: 8px;
+  }
+  
+  .menu-container {
+    display: block;
+    height: auto;
+  }
+  
+  .mobile-only {
+    display: block;
+  }
+  
+  .desktop-only {
+    display: none;
   }
 }
