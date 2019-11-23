@@ -165,11 +165,11 @@ var data = {
   pastries: [
     {
       "name": "Muffins", "price": "2.75/ea", 
-      "flavors": ["Lemon, Chocolate Chip, Raisin, Carrot Cheese"]
+      "flavors": ["Chocolate Chip, Carrot Cheese"]
     }, 
     {
       "name": "Cookies", "price": "2.75/ea",
-      "flavors": ["Chocolate Chip, Raisin"]
+      "flavors": ["Chocolate Chip"]
     },
     { "name": "Cranberry Scone", "price": "3.00" }
   ]
