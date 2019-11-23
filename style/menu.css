@@ -47,6 +47,10 @@ margin-top: 8px;
     font-size: 14px;
   }
   
+  .extras, .desc {
+    font-size: 1.2rem;
+  }
+  
   .menu-container img, .menu-div  {
     width: 100%;
   }
