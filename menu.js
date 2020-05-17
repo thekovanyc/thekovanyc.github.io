@@ -5,24 +5,7 @@ var data = {
       {
         "name": "Mexican Omelette", 
         "price": 9.25,
-        "extras": [
-          {
-            "name": "Add side of toast (white, rye, or multigrain)",
-            "price": 1.25
-          },
-          {
-            "name": "Add cheese",
-            "price": 1.50
-          }, 
-          {
-            "name": "Add bacon",
-            "price": 1.75
-          },
-          {
-            "name": "Add canadian bacon", 
-            "price": 2.00
-          }
-        ]
+        "desc": "With Onions, tomatoes and jalapeño"
       }, 
       {
         "name": "The KOVA Breakfast",
@@ -43,6 +26,19 @@ var data = {
         "name": "Egg Royale", 
         "price": 12.25,
         "desc": "With smoked salmon"
+      },
+      {
+        "name": "Sides",
+        "extras": [
+          {"name": "Bacon", "price": 3.00},
+          {"name": "Avocado", "price": 3.00},
+          {"name": "Canadian Bacon", "price": 4.00},
+          {"name": "Toast (Rye, White, Multigrain)", "price": 4.00},
+          {"name": "Turkey Bacon", "price": 3.00},
+          {"name": "Egg", "price": 1.50},
+          {"name": "Home Fries", "price": 4.00},
+          {"name": "Smoked Salmon", "price": 4.00}
+        ]
       }
     ],
   "pancake_toast_salad": [
@@ -58,6 +54,26 @@ var data = {
       "price": 9.75
     }, 
     {
+     "name": "Belgian Waffles",
+     "desc": "*With fresh fruits and nutella*",
+     "price": 9.75
+    },
+    {
+      "name": "Beef Vegetable Soup",
+      "desc": "*With garlic bread*",
+      "price": 9.75
+    },
+    {
+      "name": "Beef Roti",
+      "price":  11.00,
+      "desc": "With beef, onion and mozzarella on roti breads, with homemade avocado & basil sauce"
+    },
+        {
+      "name": "Chicken Roti",
+      "price":  10.50,
+      "desc": "With pulled chicken and mushrooms on roti bread, with homemade avocado & basil sauce"
+    },
+    {
       "name": "Fruit Salad",
       "price": 6.00
     }, 
@@ -65,13 +81,50 @@ var data = {
       "name": "Green Salad",
       "price": 6.00
     },
+  
+    
+  ],
+  
+  "bagels": [
     {
-      "name": "Sides", 
-      "extras": [
-        {"name": "Bacon", "price": 3.00},
-        {"name": "Avocado", "price": 3.00},
-        {"name": "Canadian Bacon", "price": 4.00},
-        {"name": "Home Fries", "price": 4.00}
+      "name": "Bagel",
+      "flavors": ["Plain, Sesame, Cinnamon & Raisin, Everything"],
+      "price": 2.00
+    },
+    
+    {
+      "name": "Toast",
+      "flavors": ["White, Rye, Sourdough, Multigrain"],
+      "price": 1.25
+    },
+    
+    {
+      "name": "Butter/Cream Cheese",
+      "price": 0.50
+    },
+    {
+      "name": "Sauce",
+      "price": 0.5,
+      "flavors": ["Sriracha Jam, Avocado Basil, Sriracha Maayo, Wasabi Aioli, The KOVA Sauce, Mayonnaise"]
+    }, 
+    {
+      "name": "Add-ons",
+      extras: [
+        {"name":"Smoked Salmon", price: 3.00},
+        {"name":"Turkey Bacon", price: 2.00},
+        {"name":"Arugula", price: 1.00},
+        {"name":"Red Onion", price: 0.75},
+        {"name":"Egg", price: 0.75},
+        {"name":"Bacon", price: 1.75},
+        {"name":"Caramelized Onion", price: 1.00},
+        {"name":"Cheddar", price: 1.50},
+        {"name":"Avocado", price: 1.75},
+        {"name":"Lettuce", price: 0.75},
+        {"name":"Spinach", price: 1.00},        {"name":"Tomato", price: 0.75},
+        {"name":"Grilled Mushroom", price: 1.00},
+        {"name":"Canadian Baacon", price: 2.00},
+        {"name":"American", price: 1.50},
+        {"name":"Mozzarella", price: 1.75}
       ]
     }
   ],
@@ -105,7 +158,7 @@ var data = {
       "desc": "With wasabi aioli, lettuce, tomato & hand cut fries"
     }, 
     {
-      "name": "Pull Chicken Sandwich",
+      "name": "Pulled Chicken Sandwich",
       "price":  11.75,
       "desc": "With mushrooms, greens with house dressing, served on a bun with a side of coleslaw"
     },
@@ -136,27 +189,35 @@ var data = {
     { "name": "Chai Latte", "price": 4.75 },
     { "name": "Matcha Latte", "price": 4.75 },
     { "name": "Lavender Latte", "price": 5.00 },
-    { "name": "The Kova Latte", "price": 5.25 }
-  ],
-  hot_tea: [
+    { "name": "Hot Chocolate", "price": 3.25 },
+    { "name": "The Kova Latte", "price": 5.25 },
+    { "name": "Crème Brulee Latte", "price": 5.25},
+    { "name": "Orange Olong Latte", "price": 4.75},
     { 
-      "name": "Hot Chocolate", 
-      "price": 3.25,
-      "extras": [
+      "name": "Black Milk Tea", 
+      "price": 4.25,
+    }, 
+    { "name": "Add-ons",
+     "extras": [
         { "name": "Add caramel / vanilla", "price": 0.50 },
-        { "name": "Soy / almond / iced", "price": 0.50 },        
+        { "name": "Soy / almond / iced", "price": 0.50 },  
+        { "name": "Iced", "price": 0.50},
         { "name": "Extra Shot", "price": 1.50 },
       ]
-    }, 
+    }
+    
+  ],
+  other_drinks: [
     { 
       "name": "Tea", price: "2.50 (Hot) $3 (Cold)", 
       "flavors": ["Earl Gray, English Breakfast, Green, Peppermint, Chamomile"]
-    }
-  ],
-  other_drinks: [
+    },
     {"name": "Iced Tea", "price": 3.00},
-    {"name": "Orange Juice", "price": "2.25(M) $2.75 (L)"},
-    {"name": "Bottled Sparkling Water", "price": "2.50"}
+    {"name": "Orange Juice", "price": 2.75},
+    {"name": "Mexican Coke", "price": 2.00},
+    {"name": "Bottled Sparkling Water", "price": 2.50},
+    {"name": "Homemade Hibiscus Lemonade", "price": 3.75},
+    {"name": "Homemade Lavender Lemonade", "price": 3.75}
   ],
   seasonal_drinks: [
     {"name": "Pumpkin Spice Latte", "price": 4.75 },
@@ -167,10 +228,6 @@ var data = {
       "name": "Muffins", "price": "2.75/ea", 
       "flavors": ["Chocolate Chip, Carrot Cheese"]
     }, 
-    {
-      "name": "Cookies", "price": "2.75/ea",
-      "flavors": ["Chocolate Chip"]
-    },
     { "name": "Cranberry Scone", "price": "3.00" }
   ]
 }
