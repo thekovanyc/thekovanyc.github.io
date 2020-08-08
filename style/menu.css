@@ -64,11 +64,6 @@ h4 {
 
 @media screen and (max-width: 680px) {
   .menu-div  {
-    width: 90%;
-  }
-  
-
-  }
-  
-  
+    width: 85%;
+  } 
 }

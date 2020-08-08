@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:wght@800');
 body {
   text-align: center;
   font-family: Montserrat;
@@ -46,14 +47,12 @@ hr {
   font-size: 16px;
   text-decoration: none;
   color: black;
-  opacity: 0.8;
   text-transform: uppercase;
   padding: 5px;
-/*  transition: 300ms ease-in-out;*/
 }
 
 .navigation a:hover {
-  transition: 100ms ease-out;
+  transition: 200ms ease-out;
   border-bottom: 1px solid #D29F4B;
   color: white;
   background-color: #D29F4B;
