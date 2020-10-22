@@ -192,7 +192,7 @@ var data = {
     { "name": "Hot Chocolate", "price": 3.25 },
     { "name": "The Kova Latte", "price": 5.25 },
     { "name": "Crème Brulee Latte", "price": 5.25},
-    { "name": "Orange Olong Latte", "price": 4.75},
+    { "name": "Orange Oolong Latte", "price": 4.75},
     { 
       "name": "Black Milk Tea", 
       "price": 4.25,
