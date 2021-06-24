@@ -14,12 +14,13 @@ h1, h3 {
 
 h3 {
   margin: 50px 0px;
-  line-height: 70px;
+  line-height: 50px;
 }
 
 h1 span {
   background-color:rgb(204, 178, 141);
   padding: 16px;
+  padding-left: 24px;
   border-radius: 8px;
 }
 
@@ -27,7 +28,6 @@ h3 span {
   background-color:#ebdfce;
   color: black;
   padding: 12px;
-  border-radius: 8px;
 }
 
 .index-container {
@@ -65,11 +65,18 @@ h3 span {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height:100vh;
+    /* height:100vh; */
   }
   
   .index-container {
-    margin-top: 35%;
+    margin-top: 30%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 20px;
   }
   
   .index-navigation {
