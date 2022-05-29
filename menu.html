@@ -41,7 +41,9 @@
 
     <div class="menu-div" id="pancake-toast"><h4>Sweet and Savory</h4></div>
 
-    <div class="menu-div" id="savory-food"><h4>Burger and Sandwiches</h4></div>
+    <div class="menu-div" id="savory-food">
+      <h4>Burger, Sandwiches, and Roti</h4>
+    </div>
 
     <div class="menu-div" id="drinks"><h4>Drinks</h4></div>
 
@@ -92,12 +94,6 @@
       parseMenuItems(data.coffee, drinksDom);
       parseMenuItems(data.other_drinks, drinksDom);
 
-      var seasonalDrinksDom = document.getElementById("seasonal-drinks");
-      parseMenuItems(data.seasonal_drinks, seasonalDrinksDom);
-
-      var pastriesDom = document.getElementById("pastries");
-      parseMenuItems(data.pastries, pastriesDom);
-
       var foodImages = [
         "<img src='photos/eggs.JPG'/>",
         "<img src='photos/pancake.JPG'/>",
@@ -111,7 +107,6 @@
       let index = 0;
 
       function generateCarousel(index) {
-        console.log(index, foodImages[index]);
         document.getElementById("slide").innerHTML = foodImages[index];
       }
 
