@@ -18,14 +18,14 @@ h3 {
 }
 
 h1 span {
-  background-color:rgb(204, 178, 141);
+  background-color:rgb(204, 178, 141, 0.9);
   padding: 16px;
   padding-left: 24px;
   border-radius: 8px;
 }
 
 h3 span {
-  background-color:#ebdfce;
+  background-color:rgb(235, 223, 206, 0.95);
   color: black;
   padding: 12px;
 }
@@ -45,7 +45,7 @@ h3 span {
 .index-navigation li a{
   margin: 0 12px;
   color: white;
-  background-color: rgb(204, 178, 141);
+  background-color: rgb(204, 178, 141, 0.95);
   text-decoration: none;
   padding: 8px;
   border-radius: 4px;
@@ -54,7 +54,7 @@ h3 span {
 
 .index-navigation li a:hover{
   transition: 200ms ease-in-out;
-  background-color: white;
+  background-color: rgb(255,255,255,0.95);
   color: rgb(173, 120, 86);
 }
 
