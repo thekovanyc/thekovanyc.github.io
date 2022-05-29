@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <link rel="stylesheet" href="style/style.css">
-      <link rel="stylesheet" href="style/menu.css">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/menu.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <div class="navigation">
       <ul>
-        <li><a href="/"><img src="logo.png"></a></li>
+        <li>
+          <a href="/"><img src="logo.png" /></a>
+        </li>
         <div class="align-right">
           <li><a href="/menu.html">Menu</a></li>
           <li><a href="/location.html">Location & Hours</a></li>
@@ -16,131 +18,112 @@
         </div>
       </ul>
     </div>
-  
-    <div class="title">Menu <hr/></div>
-    
-    
-    
-    <div class="menu-div">
-      
-    <h4 style="margin-bottom: 16px">Gallery</h4>
-    <div class="carousel">
-      <div class="arrow" id="left-arrow" onClick=prev()>«</div>
-      
-      <div id="slide"></div>
-      
-      <div class="arrow" id="right-arrow" onClick="next()">»</div>
+
+    <div class="title">
+      Menu
+      <hr />
     </div>
+
+    <div class="menu-div">
+      <h4 style="margin-bottom: 16px">Gallery</h4>
+      <div class="carousel">
+        <div class="arrow" id="left-arrow" onClick="prev()">«</div>
+
+        <div id="slide"></div>
+
+        <div class="arrow" id="right-arrow" onClick="next()">»</div>
       </div>
-    
+    </div>
 
     <div class="menu-div" id="brunch-food">
       <h4>Egg Dishes</h4>
     </div>
-    
-    <div class="menu-div" id="pancake-toast"><h4> Sweet and Savory</h4></div>
-    
-    
-    <div class="menu-div" id="bagels"><h4> Build Your Own Bagels / Toasts </h4></div>
-    
+
+    <div class="menu-div" id="pancake-toast"><h4>Sweet and Savory</h4></div>
+
     <div class="menu-div" id="savory-food"><h4>Burger and Sandwiches</h4></div>
-  
-    
+
     <div class="menu-div" id="drinks"><h4>Drinks</h4></div>
-    
-    <div class="menu-div" id="seasonal-drinks"><h4>Seasonal Drinks</h4></div>
-    
-    <div class="menu-div" id="pastries"><h4>Pastries</h4></div>
 
     <script src="menu.js"></script>
     <script>
-      
-            
-      function parseExtras (extras, dom) {
-        if (!extras) return '';
-        extras.forEach(extra => {
-          dom.innerHTML += 
-            `<div class="extras">- ${extra.name} +${extra.price} </div>`
-        })
-      }
-      
-      function parseDesc (desc, dom) {
-        if (!desc) return '';
-        dom.innerHTML += 
-          `<div class="desc"> ${desc} </div>`;
-      }
-      
-      function parseFlavors (flavors, dom) {
-        if (!flavors) return '';
-        flavors[0].split(", ").forEach(flavor => {
-          dom.innerHTML += 
-            `<div class="flavors"> ${flavor} </div>`;
+      function parseExtras(extras, dom) {
+        if (!extras) return "";
+        extras.forEach((extra) => {
+          dom.innerHTML += `<div class="extras">- ${extra.name} +${extra.price} </div>`;
         });
       }
-      
-      function parseMenuItems (items, dom) {
-        items.forEach(item => {
-          var price = item.price? `$${item.price}` : '';
-          dom.innerHTML += 
-            `<div class="food">${item.name} ${price}</div> ` 
-          
+
+      function parseDesc(desc, dom) {
+        if (!desc) return "";
+        dom.innerHTML += `<div class="desc"> ${desc} </div>`;
+      }
+
+      function parseFlavors(flavors, dom) {
+        if (!flavors) return "";
+        flavors[0].split(", ").forEach((flavor) => {
+          dom.innerHTML += `<div class="flavors"> ${flavor} </div>`;
+        });
+      }
+
+      function parseMenuItems(items, dom) {
+        items.forEach((item) => {
+          var price = item.price ? `$${item.price}` : "";
+          dom.innerHTML += `<div class="food">${item.name} ${price}</div> `;
+
           parseDesc(item.desc, dom);
           parseExtras(item.extras, dom);
           parseFlavors(item.flavors, dom);
-        })
+        });
       }
-      
+
       var brunchFoodDom = document.getElementById("brunch-food");
       parseMenuItems(data.egg_dishes, brunchFoodDom);
-      brunchFoodDom.innerHTML += '<br/><div class="desc">*All egg dishes served with home fries except for The KOVA Breakfast*</div><p/>';
-      
+      brunchFoodDom.innerHTML +=
+        '<br/><div class="desc">*All egg dishes served with home fries except for The KOVA Breakfast*</div><p/>';
+
       var pancakeToastDom = document.getElementById("pancake-toast");
       parseMenuItems(data.pancake_toast_salad, pancakeToastDom);
-      
-      var bagelsDom = document.getElementById("bagels");
-      parseMenuItems(data.bagels, bagelsDom);
-      
+
       var savoryFoodDom = document.getElementById("savory-food");
       parseMenuItems(data.savory, savoryFoodDom);
-      
+
       var drinksDom = document.getElementById("drinks");
       parseMenuItems(data.coffee, drinksDom);
       parseMenuItems(data.other_drinks, drinksDom);
-      
+
       var seasonalDrinksDom = document.getElementById("seasonal-drinks");
       parseMenuItems(data.seasonal_drinks, seasonalDrinksDom);
-      
+
       var pastriesDom = document.getElementById("pastries");
       parseMenuItems(data.pastries, pastriesDom);
-      
+
       var foodImages = [
         "<img src='photos/eggs.JPG'/>",
         "<img src='photos/pancake.JPG'/>",
         "<img src='photos/bec.JPG'/>",
         "<img src='photos/latte.JPG'/>",
         "<img src='photos/lemonade.JPG'/>",
-        "<img src='photos/pastries.JPG'/>"
+        "<img src='photos/pastries.JPG'/>",
       ];
 
-              
       generateCarousel(0);
       let index = 0;
-      
+
       function generateCarousel(index) {
         console.log(index, foodImages[index]);
         document.getElementById("slide").innerHTML = foodImages[index];
       }
-      
+
       function prev() {
-        index = index - 1 < 0 ? foodImages.length -1 : index - 1;
-        document.getElementById("slide").innerHTML = foodImages[index];
-      }
-      
-      function next() {
-        index = index + 1 > foodImages.length-1 ? 0 : index + 1;
+        index = index - 1 < 0 ? foodImages.length - 1 : index - 1;
         document.getElementById("slide").innerHTML = foodImages[index];
       }
 
+      function next() {
+        index = index + 1 > foodImages.length - 1 ? 0 : index + 1;
+        document.getElementById("slide").innerHTML = foodImages[index];
+      }
     </script>
   </body>
 </html>
