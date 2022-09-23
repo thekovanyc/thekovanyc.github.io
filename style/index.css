@@ -7,12 +7,12 @@ body {
   color: white;
 }
 
-h1, h3 {
+h1, h2 {
  color: #F5F5F5; 
 }
 
 
-h3 {
+h2 {
   margin: 50px 0px;
   line-height: 50px;
 }
@@ -24,7 +24,7 @@ h1 span {
   border-radius: 8px;
 }
 
-h3 span {
+h2 span {
   background-color:rgb(235, 223, 206, 0.95);
   color: black;
   padding: 12px;
