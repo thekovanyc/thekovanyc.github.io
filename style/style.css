@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:wght@800');
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:wght@800");
 body {
   text-align: center;
   font-family: Montserrat;
@@ -11,7 +11,7 @@ body {
 .title {
   font-size: 40px;
   margin-bottom: 40px;
-  color: #D29F4B;
+  color: #d29f4b;
 }
 
 hr {
@@ -51,15 +51,26 @@ hr {
   padding: 5px;
 }
 
-.navigation a:hover {
-  transition: 200ms ease-out;
-  border-bottom: 1px solid #D29F4B;
+.navigation-white a {
   color: white;
-  background-color: #D29F4B;
 }
 
-h1, h3, h4 {
-  text-shadow: 1px 1px #9A9A9A;
+.navigation-white img {
+  filter: invert(100%);
+}
+
+.navigation a:hover {
+  transition: 200ms ease-out;
+  border-bottom: 1px solid #d29f4b;
+  color: white;
+  background-color: #d29f4b;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-shadow: 1px 1px #9a9a9a;
   margin: 0;
 }
 
@@ -69,7 +80,7 @@ h1 {
   letter-spacing: 10px;
 }
 
-h3 {
+h2 {
   font-size: 20px;
   letter-spacing: 7px;
 }
@@ -80,7 +91,8 @@ h4 {
 }
 
 @media only screen and (max-width: 628px) {
-  .navigation ul, .align-right {    
+  .navigation ul,
+  .align-right {
     display: block;
     padding: 0px;
   }
@@ -88,12 +100,12 @@ h4 {
     border-radius: 0px;
     margin-top: 5px;
   }
-	
-	h1 {
-		font-size: 50px;
-	}
-  
-  h3 {
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
     font-size: 30px;
   }
 }
@@ -102,13 +114,12 @@ h4 {
   .title {
     font-size: 5rem;
   }
-  
-  .navigation li a{
+
+  .navigation li a {
     font-size: 2rem;
   }
-  
+
   .navigation li img {
     width: 250px;
   }
 }
-		
