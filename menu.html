@@ -91,32 +91,6 @@
       var drinksDom = document.getElementById("drinks");
       parseMenuItems(data.coffee, drinksDom);
       parseMenuItems(data.other_drinks, drinksDom);
-
-      var foodImages = [
-        "<img src='photos/eggs.JPG' alt='Eggs'/>",
-        "<img src='photos/pancake.JPG' alt='Pancakes'/>",
-        "<img src='photos/bec.JPG' alt='Bacon Egg and Cheese'/>",
-        "<img src='photos/latte.JPG' alt='Latte'/>",
-        "<img src='photos/lemonade.JPG' alt='Lemonade'/>",
-        "<img src='photos/pastries.JPG' alt='Pastries'/>",
-      ];
-
-      generateCarousel(0);
-      let index = 0;
-
-      function generateCarousel(index) {
-        document.getElementById("slide").innerHTML = foodImages[index];
-      }
-
-      function prev() {
-        index = index - 1 < 0 ? foodImages.length - 1 : index - 1;
-        document.getElementById("slide").innerHTML = foodImages[index];
-      }
-
-      function next() {
-        index = index + 1 > foodImages.length - 1 ? 0 : index + 1;
-        document.getElementById("slide").innerHTML = foodImages[index];
-      }
     </script>
   </body>
 </html>
