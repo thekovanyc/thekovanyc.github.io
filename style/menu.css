@@ -1,10 +1,9 @@
-
 body {
   margin-bottom: 20px;
 }
 
 h4 {
-  color: #D29F4B;
+  color: #d29f4b;
   text-shadow: none;
   text-align: center;
   font-size: 24px;
@@ -15,40 +14,26 @@ h4 {
   margin: auto;
   padding: 15px;
   background-color: white;
-  border:1px double #D29F4B;
-  margin-top: 20px;
-  box-shadow: 4px 4px #EDEDED;
-  
+  border: 1px double #d29f4b;
+  margin-top: 200px;
+  box-shadow: 4px 4px #ededed;
 }
 
-.carousel {
-  width: 100%;
-/*  margin-left: 20%;*/
-  display: flex;
-}
-
-.carousel img {
-  width: 100%;
-}
-
-.arrow {
-  align-items: center;
-  display: flex;
-  padding: 10px;
-  font-size: 30px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #454545;
+.menu-div img {
+  margin-top: -150px;
+  height: 300px;
+  margin-bottom: 20px;
 }
 
 .food {
   margin-top: 8px;
 }
 
-.extras, .desc, .flavors {
+.extras,
+.desc,
+.flavors {
   font-size: 0.8rem;
-  color: #6B6B6B;
+  color: #6b6b6b;
 }
 
 .mobile-only {
@@ -60,14 +45,21 @@ h4 {
     height: 800px;
     font-size: 2rem;
   }
-  
-  .extras, .desc {
+
+  .extras,
+  .desc {
     font-size: 1.2rem;
   }
 }
 
 @media screen and (max-width: 680px) {
-  .menu-div  {
+  .menu-div {
     width: 85%;
-  } 
+    margin-top: 120px;
+  }
+
+  .menu-div img {
+    margin-top: -100px;
+    height: 200px;
+  }
 }
