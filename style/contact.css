@@ -1,27 +1,11 @@
 body {
+  background-color: #fff9f4;
   font-size: 16px;
 }
 
 a {
-  color: #D29F4B;
+  color: #d29f4b;
   text-decoration: none;
-}
-
-.contact-container img {
-  width: 50%; 
-  object-fit: cover;
-}
-
-.contact-container {
-  margin: auto;
-  width: 70%;
-  display: flex;
-  height: 500px;
-}
-
-.contact-div {
-  width: 50%;
-  margin: auto;
 }
 
 @media only screen and (max-width: 600px) {
@@ -30,12 +14,13 @@ a {
     display: block;
     margin-bottom: 20px;
   }
-  
+
   .contact-section:last-child {
     padding-top: 20px;
   }
-  
-  .contact-container img, .contact-div {
+
+  .contact-container img,
+  .contact-div {
     width: 100%;
   }
 }

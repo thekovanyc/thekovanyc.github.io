@@ -1,6 +1,5 @@
 body {
   margin-bottom: 20px;
-  background-color: rgb(235, 223, 206, 0.95);
 }
 
 h4 {
@@ -15,31 +14,15 @@ h4 {
   margin: auto;
   padding: 15px;
   background-color: white;
-
   border: 1px double #d29f4b;
-  margin-top: 20px;
-  /* box-shadow: 4px 4px #ededed; */
+  margin-top: 200px;
+  box-shadow: 4px 4px #ededed;
 }
 
-.carousel {
-  width: 100%;
-  /*  margin-left: 20%;*/
-  display: flex;
-}
-
-.carousel img {
-  width: 100%;
-}
-
-.arrow {
-  align-items: center;
-  display: flex;
-  padding: 10px;
-  font-size: 30px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #454545;
+.menu-div img {
+  margin-top: -150px;
+  height: 300px;
+  margin-bottom: 20px;
 }
 
 .food {
@@ -72,5 +55,11 @@ h4 {
 @media screen and (max-width: 680px) {
   .menu-div {
     width: 85%;
+    margin-top: 120px;
+  }
+
+  .menu-div img {
+    margin-top: -100px;
+    height: 200px;
   }
 }
