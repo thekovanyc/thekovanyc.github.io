@@ -50,7 +50,7 @@
       function parseExtras(extras, dom) {
         if (!extras) return "";
         extras.forEach((extra) => {
-          dom.innerHTML += `<div class="extras">- ${extra.name} +${extra.price} </div>`;
+          dom.innerHTML += `<div class="extras">- ${extra.name} +$${extra.price} </div>`;
         });
       }
 
