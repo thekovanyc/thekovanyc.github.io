@@ -153,7 +153,7 @@ var data = {
   ],
 
   coffee: [
-    { name: "Drip Coffee", price: "2.25(M) $3.00(L)" },
+    { name: "Drip Coffee", price: "2.50(M) $3.00(L)" },
     { name: "Espresso", price: 3.25 },
     { name: "Americano", price: 4.0 },
     { name: "Macchiato", price: 4.0 },
