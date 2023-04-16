@@ -124,7 +124,7 @@ var data = {
     {
       name: "Pulled Chicken Sandwich",
       price: 13.75,
-      desc: "With mushrooms, greens with house dressing, served on a bun with a side of coleslaw",
+      desc: "With mushrooms, greens with house dressing, served on a bun & hand cut fries",
     },
 
     {
