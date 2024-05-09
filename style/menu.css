@@ -41,13 +41,14 @@ h4 {
 }
 
 @media screen and (min-width: 2000px) {
-  .menu-container {
-    height: 800px;
+  .food {
+    /* height: 800px; */
     font-size: 2rem;
   }
 
   .extras,
-  .desc {
+  .desc,
+  .flavors {
     font-size: 1.2rem;
   }
 }

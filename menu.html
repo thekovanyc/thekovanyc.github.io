@@ -25,12 +25,12 @@
       <hr />
     </div>
 
-    <div class="menu-div" id="brunch-food">
+    <div class="menu-div" id="egg-dishes">
       <img src="photos/eggs.JPG" alt="Eggs" />
       <h4>Egg Dishes</h4>
     </div>
 
-    <div class="menu-div" id="pancake-toast">
+    <div class="menu-div" id="sweet-and-savory">
       <img src="photos/pancake.JPG" alt="Pancakes" />
       <h4>Sweet and Savory</h4>
     </div>
@@ -77,20 +77,19 @@
         });
       }
 
-      var brunchFoodDom = document.getElementById("brunch-food");
+      var brunchFoodDom = document.getElementById("egg-dishes");
       parseMenuItems(data.egg_dishes, brunchFoodDom);
       brunchFoodDom.innerHTML +=
         '<br/><div class="desc">*All egg dishes served with home fries except for The KOVA Breakfast*</div><p/>';
 
-      var pancakeToastDom = document.getElementById("pancake-toast");
-      parseMenuItems(data.pancake_toast_salad, pancakeToastDom);
+      var sweetAndSavoryDom = document.getElementById("sweet-and-savory");
+      parseMenuItems(data.sweet_and_savory, sweetAndSavoryDom);
 
       var savoryFoodDom = document.getElementById("savory-food");
       parseMenuItems(data.savory, savoryFoodDom);
 
       var drinksDom = document.getElementById("drinks");
-      parseMenuItems(data.coffee, drinksDom);
-      parseMenuItems(data.other_drinks, drinksDom);
+      parseMenuItems(data.drinks, drinksDom);
     </script>
   </body>
 </html>

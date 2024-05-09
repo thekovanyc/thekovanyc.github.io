@@ -1,34 +1,34 @@
 var data = {
   egg_dishes: [
-    { name: "Mushroom & Onion Omelette", price: 11.25 },
-    { name: "Spinach & Cheese Omelette", price: 11.25 },
+    { name: "Mushroom & Onion Omelette", price: 11.75 },
+    { name: "Spinach & Cheese Omelette", price: 11.75 },
     {
       name: "Mexican Omelette",
-      price: 11.25,
+      price: 11.75,
       desc: "With Onions, tomatoes and jalapeño",
     },
     {
       name: "The KOVA Breakfast",
-      price: 11,
+      price: 11.5,
       desc: "2 eggs, canadian bacon, salad, grilled tomatoes, house dressing, and toast",
     },
     {
-      name: "Egg Benedict",
-      price: 12.75,
+      name: "Eggs Benedict",
+      price: 13.25,
       desc: "With canadian bacon",
     },
     {
       name: "Egg Florentine",
-      price: 12.75,
+      price: 13.25,
       desc: "With spinach",
     },
     {
-      name: "Egg Royale",
-      price: 14.25,
+      name: "Eggs Royale",
+      price: 14.75,
       desc: "With smoked salmon",
     },
     {
-      name: "Egg Paragus",
+      name: "Eggs Paragus",
       price: 13.75,
       desc: "With grilled asparagus & tomato",
     },
@@ -38,48 +38,48 @@ var data = {
         { name: "Smoked Salmon", price: 3.25 },
         { name: "Turkey Bacon", price: 2.25 },
         { name: "Arugula", price: 1.25 },
-        { name: "Red Onion", price: 1.0 },
+        { name: "Red Onion", price: 1.25 },
         { name: "Egg", price: 2.0 },
         { name: "Bacon", price: 2.0 },
         { name: "Caramelized Onion", price: 1.5 },
-        { name: "Cheddar", price: 1.75 },
+        { name: "Cheddar", price: 2.0 },
         { name: "Avocado", price: 2.0 },
-        { name: "Lettuce", price: 1.0 },
-        { name: "Spinach", price: 1.0 },
-        { name: "Tomato", price: 1.0 },
+        { name: "Lettuce", price: 1.25 },
+        { name: "Spinach", price: 1.25 },
+        { name: "Tomato", price: 1.25 },
         { name: "Grilled Mushroom", price: 1.25 },
         { name: "Canadian Bacon", price: 2.25 },
-        { name: "American Cheese", price: 1.75 },
+        { name: "American Cheese", price: 2.0 },
         { name: "Mozzarella", price: 2.0 },
       ],
     },
   ],
-  pancake_toast_salad: [
+  sweet_and_savory: [
     {
       name: "Pancake",
       desc: "*With fresh fruits*",
       flavors: ["Banana, Blueberry, OR Chocolate Chip"],
-      price: 11.75,
+      price: 12.25,
     },
     {
       name: "French Toast",
       desc: "*With fresh fruits*",
-      price: 11.75,
+      price: 12.25,
     },
     {
       name: "Belgian Waffles with Nutella",
       desc: "*With fresh fruits*",
-      price: 11.75,
+      price: 12.25,
     },
-    { name: "Fruit Salad", price: 7.0 },
+    { name: "Fruit Salad", price: 8.0 },
     {
       name: "Green Salad",
-      price: 7.0,
+      price: 7.5,
       desc: "With lettuces, arugula, spinach, tomatoes, red onions, and fresh house dressing",
     },
     {
       name: "Sauce",
-      price: 0.75,
+      price: 1.0,
       flavors: ["Sriracha Jam, Sriracha Mayo, Wasabi Aioli, The KOVA Sauce"],
     },
     {
@@ -99,7 +99,7 @@ var data = {
   savory: [
     {
       name: "Bacon, Egg & Cheese",
-      price: 8.0,
+      price: 8.5,
       desc: "With runny yolk & arugula on a roll",
     },
     {
@@ -113,17 +113,17 @@ var data = {
     },
     {
       name: "Cheeseburger",
-      price: 13.75,
+      price: 14.25,
       desc: "Homemade burger with burger sauce, caramelized red onions on brioche bun & hand cut fries",
     },
     {
       name: "Fried Chicken Sandwich",
-      price: 12.75,
+      price: 13.25,
       desc: "With wasabi aioli, lettuce, tomato & hand cut fries",
     },
     {
       name: "Pulled Chicken Sandwich",
-      price: 13.75,
+      price: 14.25,
       desc: "With mushrooms, greens with house dressing, served on a bun with a side of coleslaw",
     },
 
@@ -151,8 +151,7 @@ var data = {
       price: 6.0,
     },
   ],
-
-  coffee: [
+  drinks: [
     { name: "Drip Coffee", price: "2.50(M) $3.00(L)" },
     { name: "Espresso", price: 3.25 },
     { name: "Americano", price: 4.0 },
@@ -171,6 +170,21 @@ var data = {
     { name: "Orange Oolong Latte", price: 5.0 },
 
     {
+      name: "Tea",
+      price: "3.0 (Hot) $3.5 (Cold)",
+      flavors: ["Green, Earl Grey, English Breakfast, Peppermint, Chamomile"],
+    },
+    { name: "Iced Tea", price: 3.5 },
+    { name: "Orange Juice", price: 3.0 },
+    { name: "Coke", price: 3.0 },
+    { name: "Bottled Sparkling Water", price: 3.0 },
+    { name: "Homemade Hibiscus Lemonade", price: 4.75 },
+    { name: "Homemade Lavender Lemonade", price: 4.75 },
+    {
+      name: "Black Milk Tea",
+      price: 4.5,
+    },
+    {
       name: "Add-ons",
       extras: [
         { name: "Add caramel / vanilla", price: 0.6 },
@@ -178,23 +192,6 @@ var data = {
         { name: "Iced", price: 0.5 },
         { name: "Extra Shot", price: 1.5 },
       ],
-    },
-  ],
-  other_drinks: [
-    {
-      name: "Tea",
-      price: "2.75 (Hot) $3.25 (Cold)",
-      flavors: ["Green, Earl Grey, English Breakfast, Peppermint, Chamomile"],
-    },
-    { name: "Iced Tea", price: 3.25 },
-    { name: "Orange Juice", price: 3.0 },
-    { name: "Coke", price: 2.75 },
-    { name: "Bottled Sparkling Water", price: 2.75 },
-    { name: "Homemade Hibiscus Lemonade", price: 4.5 },
-    { name: "Homemade Lavender Lemonade", price: 4.5 },
-    {
-      name: "Black Milk Tea",
-      price: 4.5,
     },
   ],
 };
