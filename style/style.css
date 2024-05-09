@@ -105,7 +105,7 @@ h4 {
   object-fit: cover;
 }
 
-.generic-halves-container div {
+.generic-halves-container-inner-div {
   width: 50%;
   height: 100%;
   margin: auto;
@@ -113,6 +113,11 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.restaurant-guru {
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 628px) {
@@ -146,14 +151,14 @@ h4 {
     box-shadow: none;
   }
 
-  .generic-halves-container div,
+  .generic-halves-container-inner-div,
   .generic-halves-container img {
     width: 100%;
     /* background-color: #fff9f4; */
     margin-bottom: 10px;
   }
 
-  .generic-halves-container div {
+  .generic-halves-container-inner-div {
     padding-top: 12px;
     padding-bottom: 12px;
     border: 1px double #d29f4b;
