@@ -124,7 +124,7 @@ var data = {
     {
       name: "Pulled Chicken Sandwich",
       price: 14.25,
-      desc: "With mushrooms, greens with house dressing, served on a bun with a side of coleslaw",
+      desc: "With mushrooms, greens with house dressing, served on brioche bun & hand cut fries",
     },
 
     {
@@ -144,7 +144,7 @@ var data = {
     },
     {
       name: "Spicy Hand Cut Fries",
-      price: 6.5,
+      price: 7.0,
     },
     {
       name: "Hand Cut Fries",

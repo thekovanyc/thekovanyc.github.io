@@ -42,14 +42,13 @@ h4 {
 
 @media screen and (min-width: 2000px) {
   .food {
-    /* height: 800px; */
     font-size: 2rem;
   }
 
   .food {
     font-size: 1.4rem;
   }
-  
+
   .extras,
   .desc,
   .flavors {
