@@ -29,7 +29,7 @@ var data = {
     },
     {
       name: "Eggs Paragus",
-      price: 13.75,
+      price: 14.25,
       desc: "With grilled asparagus & tomato",
     },
     {
@@ -139,7 +139,7 @@ var data = {
     },
     {
       name: "Sweet Potato Fries",
-      price: 6.75,
+      price: 7.0,
       desc: "With sriracha mayo",
     },
     {
