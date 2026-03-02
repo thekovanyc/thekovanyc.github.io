@@ -24,7 +24,7 @@ var data = {
     },
     {
       name: "Eggs Royale",
-      price: 14.75,
+      price: 15.75,
       desc: "With smoked salmon",
     },
     {
